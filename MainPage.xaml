@@ -5,16 +5,16 @@
 
     <ScrollView>
         <VerticalStackLayout
-            Spacing="25"
+            Spacing="22"
             Padding="30,0"
             VerticalOptions="Center">
 
             <Image
-                Source="dotnet_bot.png"
+                Source="C:\Users\umutdrms\Desktop\download.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
+                HeightRequest="150"
                 HorizontalOptions="Center" />
-
+ 
             <Label
                 Text="merhaba, World!"
                 SemanticProperties.HeadingLevel="Level1"
@@ -30,7 +30,7 @@
 
             <Button
                 x:Name="CounterBtn"
-                Text="Click me"
+                Text="tıkla"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
