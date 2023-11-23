@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Staj_Projesi_Restoran_Yonetimi.Sayfalar.hakkimizda"
+             Title="hakkımızda">
+    <VerticalStackLayout>
+
+
+
+        <Image
+          Source="C:\Users\umutdrms\Desktop\download.png"
+           SemanticProperties.Description="Cute dot net bot waving hi to you!"
+           HeightRequest="150"
+           HorizontalOptions="Center" 
+            />
+        
+        <Label 
+            Text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repudiandae rem non? Adipisci aliquid debitis voluptatum ipsam, ipsum enim error tenetur optio earum minima nesciunt perferendis blanditiis cupiditate obcaecati voluptatibus cumque, dicta, esse neque cum soluta perspiciatis odio ratione quos. Nobis, harum vitae magni, laboriosam quidem eos quis sapiente recusandae pariatur hic distinctio perspiciatis dicta, adipisci molestiae. In eveniet possimus esse amet tenetur assumenda aut perferendis, ipsum rem ipsa libero? Dignissimos omnis consequatur deserunt, molestias veniam totam! Ipsam cupiditate, quas pariatur magni officia eius numquam ratione reprehenderit placeat sunt eum iusto adipisci distinctio rerum autem voluptatibus, nihil vel corporis obcaecati?"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Image
+          Source="C:\Users\umutdrms\Desktop\download.png"
+           SemanticProperties.Description="Cute dot net bot waving hi to you!"
+           HeightRequest="150"
+           HorizontalOptions="Center" 
+            />
+
+    </VerticalStackLayout>
+</ContentPage>

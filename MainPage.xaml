@@ -13,27 +13,116 @@
                 Source="C:\Users\umutdrms\Desktop\download.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="150"
-                HorizontalOptions="Center" />
- 
+                HorizontalOptions="Center" 
+                />
+
+
+
             <Label
                 Text="merhaba, World!"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center" 
+                />
 
-            <Label
+            <!--<Label
                 Text="Welcome to .NET Multi-platform App UI"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
                 FontSize="18"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center" />-->
+
+
+            
+
+
+            <!--<Button 
+             x:Name="btn"
+             Clicked="btn_Clicked"
+             Text="Hakkımızda"         
+             HorizontalOptions="Center" 
+              />
 
             <Button
-                x:Name="CounterBtn"
-                Text="tıkla"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+                
+             x:Name="CounterBtn"
+             Text="tıkla"
+             SemanticProperties.Hint="Counts the number of times you click"
+             Clicked="OnCounterClicked"
+             HorizontalOptions="Center" />-->
+
+            
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                 </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+
+
+                <Button
+                    x:Name="btn"
+                    Grid.Row="2"           
+                    Text="hakkımızda" 
+                    Clicked="btn_Clicked"
+                    Grid.Column="2" 
+                     HorizontalOptions="Center"
+                    />
+                
+                
+                <Button
+                    x:Name="CounterBtn"        
+                    Text="tıkla" 
+                    Clicked="OnCounterClicked"
+                     HorizontalOptions="Center"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    />
+
+                <Button
+                    Clicked="bt_Clicked_1"
+                    x:Name="bt"
+                    Text="boş"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                     HorizontalOptions="Center"
+                    />
+
+                <CheckBox
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    />
+
+
+                <Label
+                 Text="ürünler"
+                 x:Name="urun"
+                  />
+                <Label
+                 Text="fiyat"
+                     x:Name="fiyat"
+                    Grid.Row="2"
+                    Grid.Column="2"
+                   />
+                <Label
+                 Text="porsiyon"
+                  x:Name="porsiyon"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    />
+
+
+
+            </Grid>
+
 
         </VerticalStackLayout>
     </ScrollView>
