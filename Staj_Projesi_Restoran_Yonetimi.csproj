@@ -52,12 +52,35 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="Newtonsoft.Json.Bson" Version="1.0.2" />
+		<PackageReference Include="sqlite-net" Version="1.6.292" />
+		<PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Sayfalar\hakkimizda.xaml">
+	  <Compile Update="Datasets\Meyveler.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Meyveler.xsd</DependentUpon>
+	  </Compile>
+	  <Compile Update="Sayfalar\hakkimizda.xaml.cs">
+	    <DependentUpon>Hakkimizda.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Sayfalar\Hakkimizda.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Sayfalar\Masalar.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="Datasets\Meyveler.xsd">
+	    <Generator>MSDataSetGenerator</Generator>
+	    <LastGenOutput>Meyveler.Designer.cs</LastGenOutput>
+	  </None>
 	</ItemGroup>
 
 </Project>
