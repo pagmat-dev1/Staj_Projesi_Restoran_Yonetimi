@@ -9,11 +9,10 @@ public partial class Masalar : ContentPage
 	{
 		InitializeComponent();
 	}
-   
-    public async Task Masa1_ClickedAsync(object sender, EventArgs e)
+
+    private async void Masa1_ClickedAsync(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync("");
-
-
     }
+
 }
