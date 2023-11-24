@@ -74,7 +74,7 @@
                     Text="hakkımızda" 
                     Clicked="btn_Clicked"
                     Grid.Column="2" 
-                     HorizontalOptions="Center"
+                    HorizontalOptions="Center"
                     />
                 
                 
