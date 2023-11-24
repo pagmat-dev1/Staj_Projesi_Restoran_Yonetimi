@@ -1,18 +1,23 @@
 namespace Staj_Projesi_Restoran_Yonetimi.Sayfalar;
 using System;
+using System.Data.SqlClient;
 using System.Threading.Tasks;
+using Staj_Projesi_Restoran_Yonetimi.Datasets;
 using Staj_Projesi_Restoran_Yonetimi.Fonksiyonlar;
 
 public partial class Masalar : ContentPage
 {
-	public Masalar()
+  
+    public Masalar()
 	{
 		InitializeComponent();
 	}
 
     private async void Masa1_ClickedAsync(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("");
+        await Shell.Current.GoToAsync("ConnectionString");
+
     }
 
 }
+

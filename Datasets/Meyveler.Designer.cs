@@ -115,7 +115,9 @@ namespace Staj_Projesi_Restoran_Yonetimi.Datasets {
                 return base.Relations;
             }
         }
-        
+
+        public object Meyveler { get; internal set; }
+
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         protected override void InitializeDerivedDataSet() {
@@ -744,7 +746,9 @@ namespace Staj_Projesi_Restoran_Yonetimi.Datasets.MeyvelerTableAdapters {
                 this._clearBeforeFill = value;
             }
         }
-        
+
+        public object Meyveler { get; internal set; }
+
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitAdapter() {
