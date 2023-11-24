@@ -1,8 +1,8 @@
 namespace Staj_Projesi_Restoran_Yonetimi.Sayfalar;
 
-public partial class hakkimizda : ContentPage
+public partial class Hakkimizda : ContentPage
 {
-	public hakkimizda()
+	public Hakkimizda()
 	{
 		InitializeComponent();
 	}
