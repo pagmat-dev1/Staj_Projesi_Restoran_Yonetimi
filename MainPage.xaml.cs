@@ -22,7 +22,7 @@ namespace Staj_Projesi_Restoran_Yonetimi
 
         private void OnCounterClicked(object sender, EventArgs e)
         {
-            count=count+2;
+            count = count + 2;
 
             if (count == 1)
                 CounterBtn.Text = $"Clicked {count} time";
@@ -39,7 +39,7 @@ namespace Staj_Projesi_Restoran_Yonetimi
 
         }
 
-       
+
         private void bt_Clicked_1(object sender, EventArgs e)
         {
             string filePath = "C:\\Users\\umutdrms\\Desktop\\urun.json";
@@ -49,7 +49,7 @@ namespace Staj_Projesi_Restoran_Yonetimi
             string urunValue1 = jsonObj["fiyat"].ToString();
             string urunValue2 = jsonObj["porsiyon"].ToString();
             urun.Text = urunValue;
-            fiyat.Text= urunValue1;
+            fiyat.Text = urunValue1;
             porsiyon.Text = urunValue2;
 
 
@@ -61,5 +61,32 @@ namespace Staj_Projesi_Restoran_Yonetimi
             await Shell.Current.GoToAsync("masalar");
 
         }
-    }
+
+        //private void login(object sender, EventArgs e)
+        //{
+
+
+        //}
+
+        private  void OnLoginButtonClicked(object sender, EventArgs e)
+        {
+            string username = UsernameEntry.Text;
+            string password = PasswordEntry.Text;
+
+            // Kullanıcı adı ve şifrenin doğruluğunu kontrol etme işlemleri
+            // Örnek olarak, geçici bir doğrulama işlemi yapabilirsiniz.
+            if (username == "admin" && password == "1234")
+            {
+               
+                // Başarılı giriş durumunda yapılacak işlemler
+                // Örneğin, ana sayfaya yönlendirme gibi
+            }
+            else
+            {
+                // Başarısız giriş durumunda kullanıcıya bilgi verme veya yeniden denetme gibi
+            }
+
+
+
+    }    }
 }

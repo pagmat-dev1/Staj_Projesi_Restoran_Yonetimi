@@ -16,6 +16,8 @@ namespace Staj_Projesi_Restoran_Yonetimi
 
             Routing.RegisterRoute("ConncetionString", typeof(ConnectionString));
 
+            
+
 
 
 

@@ -20,9 +20,7 @@ namespace Staj_Projesi_Restoran_Yonetimi.Fonksiyonlar
     }
     public class DatabaseManager
     {
-        public DatabaseManager()
-        {
-        }
+       
 
         public static List<YourDataType> GetDataFromDatabase()
         {
@@ -31,7 +29,6 @@ namespace Staj_Projesi_Restoran_Yonetimi.Fonksiyonlar
             {
                 // SQL sorgunuzu burada yürütün
                 // Verileri alın ve döndürünx
-
                 return null;
             }
         }
