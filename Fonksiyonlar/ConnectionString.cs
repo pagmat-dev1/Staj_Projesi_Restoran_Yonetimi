@@ -8,7 +8,6 @@ using Staj_Projesi_Restoran_Yonetimi.Datasets;
 using Microsoft.SqlServer.Server;
 
 
-
 namespace Staj_Projesi_Restoran_Yonetimi.Fonksiyonlar
 {
     public class ConnectionString
@@ -19,17 +18,20 @@ namespace Staj_Projesi_Restoran_Yonetimi.Fonksiyonlar
         }
 
     }
-
-
     public class DatabaseManager
     {
-        public async Task<List<YourDataType>> GetDataFromDatabase()
+        public DatabaseManager()
+        {
+        }
+
+        public static List<YourDataType> GetDataFromDatabase()
         {
             var connectionString = ConnectionString.GetConnectionString();
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 // SQL sorgunuzu burada yürütün
-                // Verileri alın ve döndürün
+                // Verileri alın ve döndürünx
+
                 return null;
             }
         }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
+
 namespace Staj_Projesi_Restoran_Yonetimi
 {
     public static class MauiProgram
@@ -15,9 +16,9 @@ namespace Staj_Projesi_Restoran_Yonetimi
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
-#if DEBUG
-		builder.Logging.AddDebug();
-#endif
+//#if DEBUG
+//		builder.Logging.AddDebug();
+//#endif
 
             return builder.Build();
         }
