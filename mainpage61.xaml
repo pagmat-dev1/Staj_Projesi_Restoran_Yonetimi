@@ -4,10 +4,22 @@
              x:Class="Staj_Projesi_Restoran_Yonetimi.mainpage61"
              Title="mainpage61">
     <VerticalStackLayout>
+        
+        
         <StackLayout Padding="20">
+            
             <Entry Placeholder="Kullanıcı Adı" x:Name="UsernameEntry" />
             <Entry Placeholder="Şifre" IsPassword="True" x:Name="PasswordEntry" />
-            <Button Text="Giriş Yap" Clicked="OnLoginButtonClicked" />
+            
+            
+            <Button Text="Giriş Yap"
+                    
+             Clicked="OnLoginButtonClicked"
+                 
+             />
+            
         </StackLayout>
+        
+        
     </VerticalStackLayout>
 </ContentPage>

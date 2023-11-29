@@ -10,13 +10,15 @@ namespace Staj_Projesi_Restoran_Yonetimi
         {
             InitializeComponent();
 
-            Routing.RegisterRoute("hakkimizda", typeof(Hakkimizda));
+            Routing.RegisterRoute("Hakkimizda", typeof(Hakkimizda));
 
-            Routing.RegisterRoute("masalar", typeof(Masalar));
+            Routing.RegisterRoute("Masalar", typeof(Masalar));
 
             Routing.RegisterRoute("ConncetionString", typeof(ConnectionString));
 
-           
+            
+
+
 
 
 

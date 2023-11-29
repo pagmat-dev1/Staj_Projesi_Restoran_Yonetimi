@@ -35,10 +35,13 @@ namespace Staj_Projesi_Restoran_Yonetimi
         private async void btn_Clicked(object sender, EventArgs e)
         {
 
-            await Shell.Current.GoToAsync("hakkimizda");
+            await Navigation.PushAsync(new Hakkimizda());
+
+
+            //await Shell.Current.GoToAsync("Hakkimizda");
+
 
         }
-
 
         private void bt_Clicked_1(object sender, EventArgs e)
         {
@@ -52,19 +55,15 @@ namespace Staj_Projesi_Restoran_Yonetimi
             fiyat.Text = urunValue1;
             porsiyon.Text = urunValue2;
 
-
-
         }
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("masalar");
+            await Navigation.PushAsync(new Masalar());
 
+
+
+            //await Shell.Current.GoToAsync("Masalar");
         }
-
-
-        
-
-
     }   
 }

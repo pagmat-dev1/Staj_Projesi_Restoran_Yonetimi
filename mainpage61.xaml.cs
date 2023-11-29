@@ -4,7 +4,8 @@ public partial class mainpage61 : ContentPage
 {
 	public mainpage61()
 	{
-		InitializeComponent();
+       
+        InitializeComponent();
         
     }
 

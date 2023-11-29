@@ -16,6 +16,8 @@ public partial class Masalar : ContentPage
     private async void Masa1_ClickedAsync(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync("ConnectionString");
+
+
        
 
     }
