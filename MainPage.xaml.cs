@@ -62,31 +62,9 @@ namespace Staj_Projesi_Restoran_Yonetimi
 
         }
 
-        //private void login(object sender, EventArgs e)
-        //{
+
+        
 
 
-        //}
-
-        private  void OnLoginButtonClicked(object sender, EventArgs e)
-        {
-            string username = UsernameEntry.Text;
-            string password = PasswordEntry.Text;
-
-            // Kullanıcı adı ve şifrenin doğruluğunu kontrol etme işlemleri
-            // Örnek olarak, geçici bir doğrulama işlemi yapabilirsiniz.
-            if (username == "admin" && password == "1234")
-            {
-               
-                // Başarılı giriş durumunda yapılacak işlemler
-                // Örneğin, ana sayfaya yönlendirme gibi
-            }
-            else
-            {
-                // Başarısız giriş durumunda kullanıcıya bilgi verme veya yeniden denetme gibi
-            }
-
-
-
-    }    }
+    }   
 }

@@ -131,11 +131,7 @@
                    />
               
             </Grid>
-            <StackLayout Padding="20">
-                <Entry Placeholder="Kullanıcı Adı" x:Name="UsernameEntry" />
-                <Entry Placeholder="Şifre" IsPassword="True" x:Name="PasswordEntry" />
-                <Button Text="Giriş Yap" Clicked="OnLoginButtonClicked" />
-            </StackLayout>
+           
         </VerticalStackLayout>
     </ScrollView>
 
