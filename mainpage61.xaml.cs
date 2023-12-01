@@ -14,18 +14,17 @@ public partial class mainpage61 : ContentPage
         string username = UsernameEntry.Text;
         string password = PasswordEntry.Text;
 
-
         if (username == "admin" && password == "1234")
         {
+
             await Navigation.PushAsync(new MainPage());
 
         }
         else
         {
+
             await DisplayAlert("Uyarý", "Geçersiz kullanýcý adý veya þifre", "Tamam");
 
         }
-
-
     }
 }

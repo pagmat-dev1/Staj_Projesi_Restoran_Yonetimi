@@ -3,8 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Staj_Projesi_Restoran_Yonetimi.Sayfalar.Masalar"
              Title="Masalar">
+
+
     <VerticalStackLayout>
-      
+
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
@@ -21,10 +23,12 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Label 
+            <!--<Label 
                  Text="Welcome to .NET MAUI!"
                VerticalOptions="Center" 
-                 HorizontalOptions="Center" />
+                 HorizontalOptions="Center"
+               
+               />-->
 
             <Button
                 Text="masa"
@@ -32,10 +36,18 @@
                 Grid.Column="1"
                 Grid.Row="1"
                 HorizontalOptions="Center" 
-                Clicked="Masa1_ClickedAsync" />
-            
+                Clicked="Masa1_ClickedAsync"
+                />
+
+            <Entry Placeholder="kullanbıcı giriş"/>
+            <Button Text="denme" x:Name="deneme" Clicked="deneme_Clicked"
+               Grid.Row="1"
+               Grid.Column="2"            
+               />
 
 
         </Grid>
+
     </VerticalStackLayout>
+
 </ContentPage>

@@ -2,24 +2,19 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Staj_Projesi_Restoran_Yonetimi.mainpage61"
-             Title="mainpage61">
+             Title="LOGİN">
     <VerticalStackLayout>
-        
-        
-        <StackLayout Padding="20">
+
+        <StackLayout HorizontalOptions="Center" >
             
             <Entry Placeholder="Kullanıcı Adı" x:Name="UsernameEntry" />
             <Entry Placeholder="Şifre" IsPassword="True" x:Name="PasswordEntry" />
-            
-            
             <Button Text="Giriş Yap"
-                    
              Clicked="OnLoginButtonClicked"
-                 
+                    
              />
             
         </StackLayout>
-        
-        
+              
     </VerticalStackLayout>
 </ContentPage>

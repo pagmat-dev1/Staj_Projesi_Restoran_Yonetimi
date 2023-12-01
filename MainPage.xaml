@@ -9,17 +9,25 @@
             Padding="30,0"
             VerticalOptions="Center">
 
+
+            <!--<Image
+                    Source="C:\Users\umutdrms\Desktop\ts.png"
+                    SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                    HeightRequest="150"
+                    HorizontalOptions="Center" 
+                    
+             />-->
+
             <Image
-                Source="C:\Users\umutdrms\Desktop\download.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="150"
-                HorizontalOptions="Center" 
-                />
-
-
+              Source="C:\Users\umutdrms\Desktop\download.png"
+              SemanticProperties.Description="Cute dot net bot waving hi to you!"
+              HeightRequest="150"
+              HorizontalOptions="Center" 
+         
+             />
 
             <Label
-                Text="merhaba, World!"
+                Text="Restoran Yönetimi"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" 
@@ -31,10 +39,6 @@
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
                 FontSize="18"
                 HorizontalOptions="Center" />-->
-
-
-            
-
 
             <!--<Button 
              x:Name="btn"
@@ -50,9 +54,6 @@
              SemanticProperties.Hint="Counts the number of times you click"
              Clicked="OnCounterClicked"
              HorizontalOptions="Center" />-->
-
-
-
 
             <Grid>
                 <Grid.RowDefinitions>
@@ -72,12 +73,14 @@
 
 
 
+
+
                 <Button
                     x:Name="btn"
-                    Grid.Row="2"           
+                    Grid.Row="1"           
                     Text="hakkımızda" 
                     Clicked="btn_Clicked"
-                    Grid.Column="2" 
+                    Grid.Column="3" 
                     HorizontalOptions="Center"
                     />
 
@@ -88,46 +91,50 @@
                     Clicked="OnCounterClicked"
                      HorizontalOptions="Center"
                     Grid.Row="1"
-                    Grid.Column="1"
+                    Grid.Column="2"
                     />
 
-                <Button
+                <!--<Button
                     Clicked="bt_Clicked_1"
                     x:Name="bt"
                     Text="json"
                     Grid.Row="4"
-                    Grid.Column="4"
-                    
+                    Grid.Column="4"                   
                      HorizontalOptions="Center"
-                    />
+                    />-->
 
-                <CheckBox
+                <!--<CheckBox
                     Grid.Row="0"
                     Grid.Column="1"
-                    />
+                    />-->
 
 
                 <Label
                  Text="ürünler"
                  x:Name="urun"
+                    Grid.Row="2"
+                    Grid.Column="0"
                   />
                 <Label
                  Text="fiyat"
                      x:Name="fiyat"
-                    Grid.Row="1"
-                    Grid.Column="2"
+                    Grid.Row="4"
+                    Grid.Column="0"
                    />
                 <Label
                  Text="porsiyon"
                   x:Name="porsiyon"
-                    Grid.Row="2"
-                    Grid.Column="1"
+                    Grid.Row="3"
+                    Grid.Column="0"
                     />
                 <Button
                   Clicked="Button_Clicked"
                      x:Name="masa"
-                  Text="Yemek listesi"
-                    HorizontalOptions="Center"
+                  Text="Salon 1"
+                  HorizontalOptions="Center"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    
                    />
               
             </Grid>

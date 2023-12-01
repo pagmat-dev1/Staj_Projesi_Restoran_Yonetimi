@@ -15,13 +15,21 @@ public partial class Masalar : ContentPage
 
     private async void Masa1_ClickedAsync(object sender, EventArgs e)
     {
+
         await Shell.Current.GoToAsync("ConnectionString");
 
 
-       
+        //await Navigation.PushAsync(new ConnectionString());
+
 
     }
 
+    private void deneme_Clicked(object sender, EventArgs e)
+    {
 
+        
+
+
+    }
 }
 
