@@ -61,8 +61,6 @@ namespace Staj_Projesi_Restoran_Yonetimi
         {
             await Navigation.PushAsync(new Masalar());
 
-
-
             //await Shell.Current.GoToAsync("Masalar");
         }
     }   

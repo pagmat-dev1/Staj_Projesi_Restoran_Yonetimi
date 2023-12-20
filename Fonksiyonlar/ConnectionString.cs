@@ -14,14 +14,13 @@ namespace Staj_Projesi_Restoran_Yonetimi.Fonksiyonlar
     {
         public static String GetConnectionString()
         {
-            return "Server=DESKTOP-MIOEHHS\\SQLEXPRESS;Database=Restoran;User Id=test_user;Password=test123;";
+            return "Server=DESKTOP-MIOEHHS;SQLEXPRESS;Database=Restoran;User Id=test_user;Password=test123;";
         }
 
     }
     public class DatabaseManager
     {
        
-
         public static List<YourDataType> GetDataFromDatabase()
         {
             var connectionString = ConnectionString.GetConnectionString();

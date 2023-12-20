@@ -23,27 +23,34 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <!--<Label 
-                 Text="Welcome to .NET MAUI!"
-               VerticalOptions="Center" 
-                 HorizontalOptions="Center"
-               
-               />-->
+           
 
             <Button
                 Text="masa"
                 x:Name="masa1"
-                Grid.Column="1"
-                Grid.Row="1"
+                Grid.Column="5"
+                Grid.Row="2"
                 HorizontalOptions="Center" 
                 Clicked="Masa1_ClickedAsync"
                 />
 
-            <Entry Placeholder="kullanbıcı giriş"/>
-            <Button Text="denme" x:Name="deneme" Clicked="deneme_Clicked"
-               Grid.Row="1"
-               Grid.Column="2"            
-               />
+            <RadioButton
+                Grid.Column="1"
+                Grid.Row="1"
+                /> 
+           
+            <RadioButton
+                Grid.Column="1"
+                Grid.Row="2"
+               /> 
+            
+            <RadioButton
+                Grid.Column="1"
+                Grid.Row="3"              
+                />
+ 
+
+
 
 
         </Grid>
