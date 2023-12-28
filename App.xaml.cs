@@ -10,5 +10,10 @@
 
             MainPage = new NavigationPage(new mainpage61());
         }
+
+        public static void Main()
+        {
+            _ = MauiProgram.CreateMauiApp();
+        }
     }
 }

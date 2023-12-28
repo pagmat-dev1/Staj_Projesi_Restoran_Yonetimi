@@ -1,5 +1,4 @@
-﻿using Staj_Projesi_Restoran_Yonetimi.Fonksiyonlar;
-using Staj_Projesi_Restoran_Yonetimi.Sayfalar;
+﻿using Staj_Projesi_Restoran_Yonetimi.Sayfalar;
 
 
 namespace Staj_Projesi_Restoran_Yonetimi
@@ -13,19 +12,6 @@ namespace Staj_Projesi_Restoran_Yonetimi
             Routing.RegisterRoute("Hakkimizda", typeof(Hakkimizda));
 
             Routing.RegisterRoute("Masalar", typeof(Masalar));
-
-            Routing.RegisterRoute("ConncetionString", typeof(ConnectionString));
-
-            
-
-
-
-
-
-
-
-
-
 
 
         }

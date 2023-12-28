@@ -2,11 +2,11 @@ namespace Staj_Projesi_Restoran_Yonetimi;
 
 public partial class mainpage61 : ContentPage
 {
-	public mainpage61()
-	{
-       
+    public mainpage61()
+    {
+
         InitializeComponent();
-        
+
     }
 
     private async void OnLoginButtonClicked(object sender, EventArgs e)

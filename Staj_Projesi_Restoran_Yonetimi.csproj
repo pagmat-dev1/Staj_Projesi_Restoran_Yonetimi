@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net7.0-ios;net7.0-maccatalyst;net7.0-android34.0</TargetFrameworks>
+		<TargetFrameworks>net7.0-android33.0;net7.0-ios</TargetFrameworks>
 		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net7.0-tizen</TargetFrameworks> -->
@@ -15,7 +15,7 @@
 		<ApplicationTitle>Staj_Projesi_Restoran_Yonetimi</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.staj_projesi_restoran_yonetimi</ApplicationId>
+		<ApplicationId>com.pagmat.staj_projesi_restoran_yonetimi</ApplicationId>
 		<ApplicationIdGuid>7e038645-3b71-4283-92ae-fd93608dd84d</ApplicationIdGuid>
 
 		<!-- Versions -->
@@ -23,11 +23,33 @@
 		<ApplicationVersion>1</ApplicationVersion>
 
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">12.0</SupportedOSPlatformVersion>
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">13.1</SupportedOSPlatformVersion>
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">34.0</SupportedOSPlatformVersion>
+		<!--<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">13.1</SupportedOSPlatformVersion>-->
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">30.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+		<StartupObject>Staj_Projesi_Restoran_Yonetimi.Program</StartupObject>
+		<Platforms>AnyCPU;x64</Platforms>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-android33.0|AnyCPU'">
+	  <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
+	  <EnableLLVM>True</EnableLLVM>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-android33.0|x64'">
+	  <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
+	  <EnableLLVM>True</EnableLLVM>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android33.0|AnyCPU'">
+	  <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
+	  <EnableLLVM>True</EnableLLVM>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android33.0|x64'">
+	  <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
+	  <EnableLLVM>True</EnableLLVM>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -49,21 +71,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="ChatGPT.Net" Version="2.0.0" />
 		<PackageReference Include="DocumentFormat.OpenXml" Version="3.0.0" />
-		<PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.2" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="Newtonsoft.Json.Bson" Version="1.0.2" />
-		<PackageReference Include="sqlite-net" Version="1.6.292" />
-		<PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Datasets\Meyveler.Designer.cs">
-	    <DesignTime>True</DesignTime>
-	    <AutoGen>True</AutoGen>
-	    <DependentUpon>Meyveler.xsd</DependentUpon>
-	  </Compile>
 	  <Compile Update="Sayfalar\hakkimizda.xaml.cs">
 	    <DependentUpon>Hakkimizda.xaml</DependentUpon>
 	  </Compile>
@@ -82,10 +95,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Update="Datasets\Meyveler.xsd">
-	    <Generator>MSDataSetGenerator</Generator>
-	    <LastGenOutput>Meyveler.Designer.cs</LastGenOutput>
-	  </None>
+	  <Folder Include="Datasets\" />
 	</ItemGroup>
 
 </Project>
